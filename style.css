@@ -1,0 +1,322 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+    
+}
+
+html{
+    margin:0;
+    padding: 0;
+    background-color: #dedede;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+.layardalam{
+    width: 1000px;
+    margin: auto;
+}
+.layarpenuh{
+    width: 100%;
+}
+nav {
+    z-index: 100;
+    
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+}
+nav .putih{
+    background-color: #fff;
+}
+nav .logo{
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+nav .logo img{
+    width: 120px;
+    vertical-align: middle;
+
+}
+nav .menu{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .menu ul{
+    list-style-type: none;
+    margin : 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+nav ul li a{
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+
+}
+nav ul li a:hover{
+    text-decoration: underline;
+
+}
+
+/*pengaturan header*/
+header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header video{
+    position: absolute;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+header .intro{
+    z-index: 100;
+    color:#fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    
+}
+header .intro h3{
+    font-size: 50px;
+    margin: 0;
+    padding:0;
+    
+}
+ .tombol{
+    background-color: #c86b85;
+    height: 40px;
+    line-height: 42px;
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0pc 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+header .overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1 ;   
+
+}
+.tombol-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis{
+    height: 3px;
+    background-color: #fff;
+}
+section{
+    padding: 50px 0px 50px 0px;
+}
+
+section h3{
+    font-size: 30px;
+}
+section h3:after {
+    content: "";
+    border-bottom: 5px solid #c86b85;
+    width: 52px;
+    display:block;
+    margin: 20px auto;
+}
+#aboutus{
+    text-align: center;
+}
+section p.ringkasan {
+    font-size: italic;
+    font-size: 18px;
+    color: #ababab
+}
+section .konten-isi p{
+    font-style: normal;
+}
+nav .putih {
+    background-color: black;
+}
+nav .putih .tombol-menu .garis{
+    background-color: #fff;
+}
+
+
+.logo{
+   display: flex;
+}
+.del{
+    color: red;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+.lap{
+    padding-top: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+.satu {
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;;
+}
+.satu:hover{
+    background-color: goldenrod;
+}
+ span{
+    color: red;
+}
+
+@media  screen and (max-width:991.98px) {
+    .layardalam{
+        width: 90%;
+    }
+    nav .menu ul{
+        display: none;
+        margin-top: 60px;
+        position:absolite;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li{
+        width: 100%;
+        border-bottom:  1px solid #ccc;
+        background-color: #fff;
+        line-height: 40px;
+
+    }
+    nav .menu ul li a{
+        color: #333;
+    }
+    .tombol-menu{
+        display: flex;
+        
+    }
+}
+
+.container{
+	position: relative;
+	margin-top: 100px;
+	width: 450px;
+	height: auto;
+	background: #dedede;
+	border-radius: 5px;
+}
+.label{
+	padding: 20px 130px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #130f40;
+}
+.login_form{
+	padding: 20px 40px;
+}
+.login_form .font{
+	font-size: 18px;
+	color: #130f40;
+	margin: 5px 0;
+}
+.login_form input{
+	height: 40px;
+	width: 350px;
+	padding: 0 5px;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+.login_form .font2{
+	margin-top: 30px;
+}
+.login_form button{
+	margin: 45px 0 30px 0;
+	height: 45px;
+	width: 365px;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: gray;
+	border-radius: 3px;
+	border: none;
+	transition: .5s;
+}
+.login_form button:hover{
+	background: blue;
+}
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+
+.container-1 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid red;
+    padding: 50px ;
+    margin: 50px;
+    text-transform: capitalize;
+
+}
+.h3{
+    text-transform:lowercase;
+}
+
+   
+
+.e-1{
+    color: red;
+}
+
+.btn{
+   background-color: green;
+  float: right;
+}
+.btn:hover{
+    background-color:blue;
+}

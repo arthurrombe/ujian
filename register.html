@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar Form Validation</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="layardalam">
+            <div class="logo">
+                <div class="lap">laptop</div>
+                <div class="del">Dell</div>
+                <a href=""> <img src=""  class="putih"> </a>
+               
+            </div>
+                <div class="menu">
+                    <a href="#" class="tombol-menu">
+                        <span class="garis"></span>
+                        <span class="garis"></span>
+                        <span class="garis"></span>
+                      
+                    </a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">product</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="register.html">register</a></li>
+                        <li><a href="login.html">login</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            
+        </div>
+    </nav>
+   
+    
+</div>
+<h3 align="center" class="h3">Registrasi</h3>
+    <div class="container-1">
+        
+        <form name="formPendaftaran" action="daftar.php" method="post">
+            <div class="group">
+                <label>Nama</label>
+                <input type="text" name="nama" placeholder="Nama lengkap" class="form-control">
+            </div>
+            <br>
+            <div class="group-2">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email Aktif" class="form-control">
+                <small id="emailHelp" class="e-1">Email Akan Digunakan Untuk Mengirimkan Notifikasi.</small>
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="gneder"><label for="">male</label>
+                <input type="radio" name="gneder"><label for="">female</label>
+            </div>
+            <br>
+            <div></div>
+            <div class="group-3">
+                <label>domisili</label>
+                <select name="jurusan" class="form-control">
+                        <option value="0">timika</option>
+                        <option value="1">makssar</option>
+                        <option value="2">jayapura</option>
+                        <option value="3">toajaa</option>
+                    </select>
+            </div>
+            <div class="pass-1">
+                <span style="float:right;" id="status"></span>
+                <input type="password" id="pass" placeholder="Buat Kata Sandi Baru" onkeyup="passwordStrength(this.value)">
+                <a href="#" onclick="passToggle()" id="show">Lihat Password</a><br>
+                
+               </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="java/regis.js"></script>
+    <script src="javacript.js"> </script>
+</body>
+</html>
